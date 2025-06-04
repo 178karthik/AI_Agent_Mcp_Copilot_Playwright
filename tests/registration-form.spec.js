@@ -34,5 +34,7 @@ test('Registration form test', async ({ page }) => {
   // Verify the "Go To Flights Search" button is displayed
   const goToFlightsButton = page.getByRole('link', { name: 'Go To Flights Search' });
   await expect(goToFlightsButton).toBeVisible();
+
+  page.close()
   
 });
